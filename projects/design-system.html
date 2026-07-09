@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Design System — Case Study — Soheil Vanaee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo">soheil<span>.</span>vanaee</a>
+    <nav class="nav-links">
+      <a href="../index.html#work">work</a>
+      <a href="../index.html#skills">skills</a>
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#contact" class="btn">say hi</a>
+    </nav>
+    <button class="nav-toggle">[menu]</button>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="case-back" href="../index.html#work">← back to work</a>
+      <div class="eyebrow">case study — design system · motion</div>
+      <h1>Animated Design System</h1>
+      <p class="hero-role" style="margin-top:18px;max-width:60ch;">
+        A complete design system with reusable components, variants, Auto Layout, and variables — plus animated interactions built in Figma Motion for smoother developer handoff.
+      </p>
+
+      <div class="case-meta">
+        <div><h5>role</h5><p>Design system architecture, component design, motion design</p></div>
+        <div><h5>timeline</h5><p>Personal case study — replace with real dates</p></div>
+        <div><h5>tools</h5><p>Figma, Figma Motion</p></div>
+        <div><h5>tags</h5><p>case study, design system, motion</p></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="case-cover">
+        <img src="../images/componentsInstagram post - 1.png" alt="Animated Design System — component library cover">
+      </div>
+    </div>
+  </section>
+
+  <div class="case-body">
+
+    <section>
+      <div class="eyebrow">overview</div>
+      <h2>The problem</h2>
+      <p>Design and engineering were drifting apart: components were rebuilt slightly differently on every screen, and motion existed only as a verbal description in handoff notes, open to interpretation.</p>
+      <p><em>Replace this paragraph with your real problem statement — what was
+        broken, for whom, and how you knew it (interviews, support tickets,
+        analytics, etc.).</em></p>
+    </section>
+
+    <section>
+      <div class="eyebrow">process</div>
+      <h2>UX approach</h2>
+      <p>I treated motion as a first‑class part of the system, not a final polish step, defining it alongside each component's states.</p>
+      <ul class="checklist">
+        <li>Audited existing screens and consolidated repeated patterns into components</li>
+        <li>Built variables and Auto Layout structures for consistent, scalable components</li>
+        <li>Defined component variants and interaction states (default, hover, active, disabled)</li>
+        <li>Designed and documented motion using Figma Motion for key interactions</li>
+        <li>Piloted the system on a real feature before rolling it out team‑wide</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="eyebrow">handoff</div>
+      <h2>How a component gets adopted</h2>
+      <p>Each component ships with its variants, states, and motion spec attached, so an engineer can go from "I need this component" to a correct, on‑brand implementation without guessing.</p>
+      <div class="flow-diagram">
+        <img src="../images/flow-designsystem.svg" alt="Flow diagram for Animated Design System">
+      </div>
+      <p><em>Replace this diagram with your real user‑flow export from Figma
+        or FigJam.</em></p>
+    </section>
+
+    <section>
+      <div class="eyebrow">outcome</div>
+      <h2>Result &amp; learnings</h2>
+      <p>Describe the outcome here — for example, reduction in one‑off components, faster handoff time, or feedback from the engineering team after rollout.</p>
+    </section>
+
+  </div>
+
+  <section>
+    <div class="section-head wrap reveal">
+      <h2>Shots</h2>
+      <p class="section-note">Replace these with real screenshots from Figma or your shipped product.</p>
+    </div>
+    <div class="shots-grid reveal">
+      <figure class="video-shot">
+        <video
+          src="../images/Dribbble shot - 1.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto">
+        </video>
+        <figcaption>04 — motion spec, live preview</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <nav class="case-nav">
+    <a href="../index.html#work">← all work</a>
+    <a href="parda-app.html">next: Parda — Financial Commitment Manager →</a>
+  </nav>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Soheil Vanaee</span>
+    <span>built with html · css · js</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>

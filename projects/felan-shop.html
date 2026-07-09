@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estate Nove — Real Estate Platform (UI/UX Design + React Development)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo">soheil<span>.</span>vanaee</a>
+    <nav class="nav-links">
+      <a href="../index.html#work">work</a>
+      <a href="../index.html#skills">skills</a>
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#contact" class="btn">say hi</a>
+    </nav>
+    <button class="nav-toggle">[menu]</button>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="case-back" href="../index.html#work">← back to work</a>
+      <div class="eyebrow">case study — real estate platform</div>
+      <h1>Estate Nove — Real Estate Platform</h1>
+      <p class="hero-role" style="margin-top:18px;max-width:60ch;">
+        A fully responsive real-estate marketplace — home, property search &amp; filtering, property details, a mortgage calculator, and full authentication flows — designed end-to-end in Figma and built with React for a consistent, fully working experience, not just a mockup.
+      </p>
+
+      <div class="case-meta">
+        <div><h5>role</h5><p>UI/UX design + React front-end development</p></div>
+        <div><h5>timeline</h5><p>Personal project — 2026</p></div>
+        <div><h5>tools</h5><p>Figma, React, React Router, Vite</p></div>
+        <div><h5>tags</h5><p>case study, real estate, react development</p></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="case-cover">
+        <img src="../images/estate-nove-cover.png" alt="Estate Nove — real estate platform home page">
+      </div>
+    </div>
+  </section>
+
+  <div class="case-body">
+
+    <section>
+      <div class="eyebrow">overview</div>
+      <h2>The problem</h2>
+      <p>Most real-estate sites are either overloaded with filters or too generic to feel trustworthy. The goal was a browsing experience that stays clean and fast while still giving buyers, renters, and sellers a clear, short path from "just looking" to "talking to an agent" — with every step of that path actually working, not just designed.</p>
+      <p>This is a self-directed case study: there was no client or user research pool behind it. I set the brief myself, based on patterns I noticed while benchmarking real-estate platforms, and used it as an end-to-end exercise in owning both the design and the build.</p>
+    </section>
+
+    <section>
+      <div class="eyebrow">process</div>
+      <h2>UX approach</h2>
+      <p>I designed the full site as one connected system in Figma — spacing, typography, color, and component patterns stayed consistent from the landing page through search, property details, and checkout-adjacent flows like contacting an agent or applying for financing.</p>
+      <ul class="checklist">
+        <li>Benchmarked common real-estate platform patterns: listing cards, faceted filters, property detail layouts</li>
+        <li>Designed a token-based visual system (navy + bronze palette, type scale, spacing) reused across every screen</li>
+        <li>Wireframed and then designed high-fidelity screens for home, listings, property details, mortgage calculator, and auth</li>
+        <li>Applied progressive disclosure to filters ("+ more option") to keep the default search bar uncluttered</li>
+        <li>Designed inline validation and empty states for every form, so the interface never fails silently</li>
+        <li>Built the entire system in React with real routing, so every tab, card, and footer link leads to a real page</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="eyebrow">user flow</div>
+      <h2>From landing page to agent contact</h2>
+      <p>The flow takes a visitor from the homepage to browsing and filtering listings, into a property's full details, and out to either a mortgage estimate or a direct conversation with an agent — with sign-up available but never required to get there.</p>
+      <div class="flow-diagram">
+        <img src="../images/estate-nove-flow.svg" alt="User flow diagram for Estate Nove — from landing page to agent contact and sign-up">
+      </div>
+    </section>
+
+      <section>
+        <div class="section-head wrap reveal">
+          <h2>Shots</h2>
+          <p class="section-note">Replace these with real screenshots from Figma or your shipped product.</p>
+        </div>
+        <div class="shots-grid reveal">
+          <figure><img src="../images/estatenova1.png" ></figure>
+          <figure><img src="../images/estatenova2.png" ></figure>
+          <figure><img src="../images/estatenova3.png" ></figure>
+        </div>
+      </section>
+
+    <section>
+      <div class="eyebrow">outcome</div>
+      <h2>Result &amp; learnings</h2>
+      <p>The result is a fully working, responsive React application: 13 real routes (not static mockups), including listings filtered by type, a live mortgage calculator, and validated auth forms. Owning both design and development end-to-end forced tighter decisions — every visual choice had to survive being actually built, and every component had to earn its place in the design system rather than being a one-off screen.</p>
+      <p>The biggest lesson was around scope: designing and building solo means the design system <em>is</em> the plan — investing early in tokens and reusable components (search filter, property card, listing page shell) made adding new pages like Home Loans or Sell dramatically faster later on.</p>
+    </section>
+
+  </div>
+
+  <nav class="case-nav">
+    <a href="../index.html#work">← all work</a>
+    <a href="design-system.html">next: Animated Design System →</a>
+  </nav>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Soheil Vanaee</span>
+    <span>built with html · css · js</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>
